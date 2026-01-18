@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng ký</title>
+    <link rel="stylesheet" href="/assets/css/styles.css" />
+    <link rel="stylesheet" href="/assets/css/auth.css" />
+</head>
+
+<body>
+    <main class="card">
+        <h1>Đăng ký</h1>
+        <p class="muted">Tạo tài khoản để mua sắm và theo dõi đơn hàng của bạn.</p>
+
+        <div id="alert" class="alert"></div>
+
+        <form id="registerForm">
+            <div class="field">
+                <label for="fullName">Họ và tên</label>
+                <input id="fullName" name="fullName" type="text" placeholder="Nguyễn Văn A" required />
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" required />
+            </div>
+            <div class="field">
+                <label for="password">Mật khẩu</label>
+                <input id="password" name="password" type="password" placeholder="Ít nhất 6 ký tự" minlength="6"
+                    required />
+            </div>
+            <button id="submitBtn" class="btn btn-success" type="submit">Tạo tài khoản</button>
+        </form>
+
+        <div class="actions">
+            Đã có tài khoản? <a href="/auth/login.html">Đăng nhập</a>
+        </div>
+    </main>
+
+    <script src="/assets/js/auth-register.js"></script>
+</body>
+
+</html>

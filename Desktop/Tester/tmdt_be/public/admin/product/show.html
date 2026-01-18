@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Y Tế Mart" />
+    <meta name="author" content="Y Tế Mart" />
+    <title>Sản phẩm - Y Tế Mart</title>
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="sb-nav-fixed">
+    <div id="header"></div>
+    <div id="layoutSidenav">
+        <div id="sidebar"></div>
+        <div id="layoutSidenav_content">
+            <main>
+                <div class="container-fluid px-4">
+                    <h1 class="mt-4">Quản lý Sản phẩm</h1>
+                    <ol class="breadcrumb mb-4">
+                        <li class="breadcrumb-item"><a href="/admin/dashboard/show.html">Trang chủ</a></li>
+                        <li class="breadcrumb-item active">Sản phẩm</li>
+                    </ol>
+                    <div class="mt-5">
+                        <div class="row">
+                            <div class="col-12 mx-auto">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h3>Danh sách sản phẩm</h3>
+                                    <a href="/admin/product/create.html" class="btn btn-primary">Tạo sản phẩm</a>
+                                </div>
+                                <hr />
+
+                                <table class="table table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Tên</th>
+                                            <th>Giá</th>
+                                            <th>Danh mục</th>
+                                            <th>Hành động</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="productTableBody"></tbody>
+                                </table>
+
+                                <nav aria-label="Phân trang sản phẩm">
+                                    <ul id="pagination" class="pagination justify-content-center"></ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+            <div id="footer"></div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/admin-layout.js"></script>
+    <script src="/assets/js/product.js"></script>
+</body>
+
+</html>
